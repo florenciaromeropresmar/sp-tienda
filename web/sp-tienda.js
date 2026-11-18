@@ -80,6 +80,8 @@
     '.product-description-content .chipg,.product-description-content .ri{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:14px 0;border-bottom:1px solid var(--sp-line)}',
     '.product-description-content .cap,.product-description-content .k{font-size:14px;color:var(--sp-mute);flex:0 0 auto}',
     '.product-description-content .chip,.product-description-content .v{font-size:15px;font-weight:500;color:var(--sp-ink);text-align:right;border:0!important;background:none!important;padding:0!important;border-radius:0!important}',
+    '.product-description-content .ri.ancha{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px}',
+    '.product-description-content .ri.ancha .v{text-align:left;font-weight:400;line-height:1.5}',
     '.product-description-content .fresto{border-top:1px solid var(--sp-line)}',
     '.product-description-content details.nxac{border-bottom:1px solid var(--sp-line)}',
     '.product-description-content details.nxac>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:16px;font-weight:600;color:var(--sp-ink)}',
