@@ -23,6 +23,7 @@
     '.sp-banner--papel .sp-banner-txt{flex:1 1 440px}',
     '.sp-banner-fotos{flex:1 1 420px;display:flex;justify-content:flex-end;align-items:flex-end;gap:8px}',
     '.sp-banner-fotos img{display:block;height:auto;mix-blend-mode:multiply}',
+    '.sp-banner,.sp-banner h1,.sp-banner p,.sp-chips a,.sp-prod h1.product-name,.sp-prod .sp-kicker,.sp-tipo,.sp-modelo{font-family:Montserrat,system-ui,sans-serif!important}',
     '.sp-banner-kicker{margin:0;font-size:15px;font-weight:600}',
     '.sp-banner-titulo{margin:0;font-size:clamp(40px,5.4vw,80px);line-height:1.04;font-weight:700;letter-spacing:-.02em}',
     '.sp-banner-bajada{margin:0;font-size:clamp(17px,1.4vw,19px);line-height:1.5;max-width:36ch}',
@@ -36,7 +37,7 @@
     '.sp-chips a.sp-on{background:var(--sp-ink);border-color:var(--sp-ink);color:var(--sp-paper)}',
     '@media (min-width:768px){.sp-cat .filters-controls-content{display:none!important}.sp-cat .section-main-products-grid .grid.grid-md-auto-4{display:block!important}}',
     '.sp-cat .section-main-products-grid{padding-top:40px}',
-    '.sp-cat .js-product-table{column-gap:32px!important;row-gap:56px!important}',
+    '.sp-cat .js-product-table{row-gap:56px!important}',
     '.sp-cat .product-item-information{padding-top:16px}',
     '.sp-cat .product-item .js-item-submit-container{display:none!important}',
     '.sp-tipo{display:block;font-size:13px;font-weight:400;color:var(--sp-mute);margin-bottom:6px}',
@@ -235,6 +236,11 @@
   }
 
   /* ---------- arranque ---------- */
+  if (!document.querySelector('link[href*="Montserrat"]')) {
+    var fl = el('link'); fl.rel = 'stylesheet';
+    fl.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap';
+    (document.head || document.documentElement).appendChild(fl);
+  }
   var st = el('style'); st.id = 'sp-tienda-css'; st.textContent = CSS; (document.head || document.documentElement).appendChild(st);
 
   function iniciar() {
