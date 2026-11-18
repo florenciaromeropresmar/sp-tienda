@@ -65,6 +65,7 @@
     '.sp-prod .section-related-products{padding-top:120px}',
 
     /* descripción de producto */
+    '.product-description-heading{font-family:Montserrat,system-ui,sans-serif!important;font-size:20px!important;font-weight:700!important;letter-spacing:-.01em;color:var(--sp-ink);margin:0 0 20px!important}',
     '.product-description-content{font-family:Montserrat,system-ui,sans-serif;font-size:16px;line-height:1.6;color:var(--sp-ink2)}',
     '.product-description-content p{margin:0}',
     '.product-description-content .fbox{display:grid;gap:12px;margin:0 0 40px}',
