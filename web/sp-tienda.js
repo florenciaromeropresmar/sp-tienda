@@ -1,12 +1,12 @@
 /* SP Connect Argentina · ajustes de la tienda (categorías, fichas de producto y video del carrusel).
    Va dentro de un bloque "Personalizada > Código" del tema, así no depende de GTM
    y no lo cortan los bloqueadores de anuncios. Las imágenes y videos se sirven desde
-   GitHub (florenciaromeropresmar/sp-tienda) por jsDelivr. */
+   GitHub Pages (florenciaromeropresmar/sp-tienda). */
 (function () {
   if (window.__spTienda) return;
   window.__spTienda = true;
 
-  var CDN = 'https://cdn.jsdelivr.net/gh/florenciaromeropresmar/sp-tienda@main/';
+  var CDN = 'https://florenciaromeropresmar.github.io/sp-tienda/';
 
   /* ---------- estilos ---------- */
   var CSS = [
